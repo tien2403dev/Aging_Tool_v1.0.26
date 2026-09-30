@@ -1,0 +1,6 @@
+[2026-09-29 16:20:27 UTC+07] Lịch sử Alarm đọc log mỗi lần bấm Slot
+- Thêm services/log_alarm_history.py: dựng đúng cửa sổ vi phạm từ TXT theo Alarm Date/Machine/Slot, kiểm tra cặp FAIL cũ qua Start/End.
+- ui/tabs/alarm_tab.py: đọc log trong QRunnable, hiển thị tiến trình, mở dropdown chuỗi nếu còn khớp, thông báo nếu không có chuỗi.
+- repositories/machine_alarm_details.py: giữ dòng Alarm 2 FAIL cũ sau mốc tạo mới 5 ngày, giữ Start/End khi cùng ngày thêm quy tắc Yield; không đổi cơ chế tạo Alarm mới.
+- Không ghi lịch sử test vào database; giữ các trường Engineer, Status, Date Complete và cơ chế gửi mail.
+- Đã thử trường hợp dữ liệu giả và SQLite tạm; chưa chạy UI Windows/ổ mạng thực tế.
