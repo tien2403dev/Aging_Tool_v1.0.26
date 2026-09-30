@@ -25,3 +25,9 @@ Aging Tool - Alarm / Machine Slot Yield / Gmail sync update
 
 IMPORTANT:
 After replacing the project, run Search in Machine Slot Yield once for the required date range. This refreshes the Alarm database with the current Machine Slot Yield calculations.
+
+-RULE ALARM
+FAIL 2 LẦN LIÊN TỤC CÙNG SCRAP CODE VÀ KHÁC SCRAP CODE
+FAIL 15 LẦN LIÊN TỤC < TARGET 15, 30 LẦN LIÊN TỤC NHỎ HƠN TARGET 30 (ĐIỀU KIỆN PHỤ 5 LẦN TEST GẦN NHẤT HIỆU SUẤT < 100%)
+FAIL 15 LẦN LIÊN TỤC CÙNG MODEL < TARGET 15 CÙNG MODEL, 30 LẦN LIÊN TỤC CÙNG MODEL < TARGET 30 CÙNG MODEL (ĐIỀU KIỆN PHỤ 5 LẦN TEST GẦN NHẤT HIỆU SUẤT < 100%)
+CÁC LẦN LIÊN TỤC KHÔNG XÉT THEO NGÀY MÀ CỨ LẤY ĐỦ SỐ LẦN THÌ TÍNH
